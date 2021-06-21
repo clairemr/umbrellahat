@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/umbrellahat/static/css/main.5c6c6be8.chunk.css",
+    "main.js": "/umbrellahat/static/js/main.584a9078.chunk.js",
+    "main.js.map": "/umbrellahat/static/js/main.584a9078.chunk.js.map",
+    "runtime-main.js": "/umbrellahat/static/js/runtime-main.4ad3f3ee.js",
+    "runtime-main.js.map": "/umbrellahat/static/js/runtime-main.4ad3f3ee.js.map",
+    "static/js/2.b341d936.chunk.js": "/umbrellahat/static/js/2.b341d936.chunk.js",
+    "static/js/2.b341d936.chunk.js.map": "/umbrellahat/static/js/2.b341d936.chunk.js.map",
+    "static/js/3.7952981e.chunk.js": "/umbrellahat/static/js/3.7952981e.chunk.js",
+    "static/js/3.7952981e.chunk.js.map": "/umbrellahat/static/js/3.7952981e.chunk.js.map",
+    "index.html": "/umbrellahat/index.html",
+    "static/css/main.5c6c6be8.chunk.css.map": "/umbrellahat/static/css/main.5c6c6be8.chunk.css.map",
+    "static/js/2.b341d936.chunk.js.LICENSE.txt": "/umbrellahat/static/js/2.b341d936.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/umbrellahat/static/media/pexels-josh-sorenson-1478524.711991dc.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4ad3f3ee.js",
+    "static/js/2.b341d936.chunk.js",
+    "static/css/main.5c6c6be8.chunk.css",
+    "static/js/main.584a9078.chunk.js"
+  ]
+}
