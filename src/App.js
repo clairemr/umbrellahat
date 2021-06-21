@@ -9,7 +9,7 @@ import theme from './theme';
 function Weather(){
   const [weather, setWeather] = useState();
   useEffect(() => {
-    fetch("http://api.openweathermap.org/data/2.5/onecall?lat=-33.7046&lon=151.0987&units=metric&APPID=dda30a2653d9ac40b002cd7bf333c385")
+    fetch(process.env.REACT_APP_API_KEY)
     .then(response => response.json())
     .then(response => {
       setWeather(response)
@@ -24,6 +24,7 @@ function Weather(){
 function App() {
   const weather = Weather();
   if(weather){
+    console.log("apikey", process.env.REACT_APP_API_KEY)
     return (
       <ThemeProvider theme={theme}>
       <div className="App">
