@@ -13,9 +13,19 @@
   }
 }
 
+.App-body {
+  background-color: #6291ee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(105, 48, 48);
+}
+
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-image: url("pexels-josh-sorenson-1478524.jpg");
+  background-color: #9aa0ac;
   display: flex;
   flex-direction: column;
   align-items: center;
