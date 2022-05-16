@@ -23,6 +23,7 @@ function Weather(){
 
 function App() {
   const weather = Weather();
+  console.log(weather);
   if(weather){
     return (
       <ThemeProvider theme={theme}>

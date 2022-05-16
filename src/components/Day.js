@@ -13,14 +13,14 @@ const Day = (props) => {
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const displayTime = () => {
       if(weather && Object.keys(weather).length !== 0){
-        const jsDate = new Date(weather['daily'][props.day].["dt"] * 1000);
+        const jsDate = new Date(weather['daily'][props.day]["dt"] * 1000);
         console.log(Object.keys(weather).length)
         return days[jsDate.getDay()];
       }
       //return "monday"
     }
-    const hat = (weather && weather['daily'][props.day].["clouds"] <= 60 && weather['daily'][props.day].["uvi"] >= 3) ? true : false;
-    const umbrella = (weather && weather['daily'][props.day].hasOwnProperty('rain') && weather['daily'][props.day].["rain"] >= 5)? true : false;
+    const hat = (weather && weather['daily'][props.day]["clouds"] <= 60 && weather['daily'][props.day]["uvi"] >= 3) ? true : false;
+    const umbrella = (weather && weather['daily'][props.day].hasOwnProperty('rain') && weather['daily'][props.day]["rain"] >= 5)? true : false;
 
     return(
         <div>
@@ -37,7 +37,7 @@ const Day = (props) => {
                     
                     </CardContent>
                     <CardActions>
-                    <Button size="small" color="primary" href='test.com' target="_blank">
+                    <Button size="small" color="primary" href='?day=2' target="_blank">
                         See details
                     </Button>
                     </CardActions>

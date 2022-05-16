@@ -15,23 +15,23 @@ const CardWeather = (props) => {
     const [time, setTime] = useState(props.time);
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const displayTime = () => {
-      if(weather?.['hourly'][time].["dt"]){// == (weather && weather['hourly'][time].["dt"]) 
-        const jsDate = new Date(weather['hourly'][time].["dt"] * 1000);
+      if(weather?['hourly'][time]["dt"]){// == (weather && weather['hourly'][time]["dt"]) 
+        const jsDate = new Date(weather['hourly'][time]["dt"] * 1000);
         return jsDate.getHours() + ':00, ' + days[jsDate.getDay()];
       }
     }
-    const hat = (weather && weather['hourly'][time].["clouds"] <= 60 && weather['hourly'][time].["uvi"] >= 3) ? true : false;
-    const umbrella = (weather && weather['hourly'][time].hasOwnProperty('rain') && weather['hourly'][time].["rain"]['1h'] >= 1) ? true : false;
+    const hat = (weather && weather['hourly'][time]["clouds"] <= 60 && weather['hourly'][time]["uvi"] >= 3) ? true : false;
+    const umbrella = (weather && weather['hourly'][time].hasOwnProperty('rain') && weather['hourly'][time]["rain"]['1h'] >= 1) ? true : false;
   
     return (
       <div>
         <h2><WhatToBring hat={hat} umbrella={umbrella}/></h2>
         {umbrella ? <BeachAccessIcon color='primary'/> : <BeachAccessIcon color='disabled'/>}
         {hat ? <WbSunnyIcon color='primary'/> : <WbSunnyIcon color='disabled'/>}
-        {(weather && <p>Feels like: {weather['hourly'][time].["feels_like"]} degrees</p> )}
-        {(weather && weather['hourly'][time].["rain"] && <p>Rain: {weather['hourly'][time].["rain"]['1h']}mm</p> )}
-        {(weather && <p>Cloudiness: {weather['hourly'][time].["clouds"]}</p> )}
-        {(weather && <p>UV index: {weather['hourly'][time].["uvi"]}</p> )}
+        {(weather && <p>Feels like: {weather['hourly'][time]["feels_like"]} degrees</p> )}
+        {(weather && weather['hourly'][time]["rain"] && <p>Rain: {weather['hourly'][time]["rain"]['1h']}mm</p> )}
+        {(weather && <p>Cloudiness: {weather['hourly'][time]["clouds"]}</p> )}
+        {(weather && <p>UV index: {weather['hourly'][time]["uvi"]}</p> )}
         {console.log(time, weather)}
         <br/>{(time >= 1) && <button onClick={() => setTime(time - 1)}> {'<'} </button>}
         Time: {displayTime()}
