@@ -40,7 +40,7 @@ function App() {
       </ThemeProvider>
     );
   }else{
-    return null;
+    return "Weather hasn't loaded";
   }
   
 }
