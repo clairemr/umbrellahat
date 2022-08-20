@@ -15,8 +15,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Deploy
+    - name: Set up node
       uses: actions/setup-node@v3
+    - name: Git login
+      run: |
+        git config --global user.email "actions@gihub.com"
+        git config --global user.name "gh-actions"
     - run: yarn install
     # - run: npm run build --if-present
     - run: npm run deploy
